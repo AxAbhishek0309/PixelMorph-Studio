@@ -11,15 +11,14 @@ const config: Config = {
   	extend: {
   		colors: {
   			brand: {
-  				'100': '#EA6365',
-  				DEFAULT: '#FA7275'
+  				'100': '#7b5cf6',
+  				DEFAULT: '#a78bfa'
   			},
   			red: '#FF7474',
   			error: '#b80000',
   			green: '#3DD9B3',
   			blue: '#56B8FF',
   			pink: '#EEA8FD',
-  			orange: '#F9AB72',
   			light: {
   				'100': '#333F4E',
   				'200': '#A3B2C7',

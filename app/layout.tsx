@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins } from 'next/font/google'
-
 import "./globals.css";
 
 const poppins = Poppins({
@@ -10,20 +9,14 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "StoreIt",
-  description: "StoreIt - The only storage solution you need.",
+  title: "PixelMorph Studio",
+  description: "PixelMorph Studio - The only storage solution you need.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${poppins.variable} font-poppins antialiased`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={poppins.variable + " font-poppins bg-background text-foreground min-h-screen"}>
         {children}
       </body>
     </html>

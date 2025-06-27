@@ -5,6 +5,7 @@ import Image from "next/image";
 import { navItems } from "@/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import ColorModeToggle from "@/components/ColorModeToggle";
 
 interface Props {
   fullName: string;
@@ -17,23 +18,16 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
 
   return (
     <aside className="sidebar">
-      <Link href="/">
-        <Image
-          src="/assets/icons/logo-full-brand.svg"
-          alt="logo"
-          width={160}
-          height={50}
-          className="hidden h-auto lg:block"
-        />
-
+      <div className="flex flex-row items-center justify-center mb-8 gap-2">
         <Image
           src="/assets/icons/logo-brand.svg"
-          alt="logo"
-          width={52}
-          height={52}
-          className="lg:hidden"
+          alt="PixelMorph Studio logo"
+          width={36}
+          height={36}
+          className="mb-0"
         />
-      </Link>
+        <h2 className="text-xl font-extrabold text-[#a78bfa]">PixelMorph Studio</h2>
+      </div>
 
       <nav className="sidebar-nav">
         <ul className="flex flex-1 flex-col gap-6">
@@ -53,9 +47,10 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                   className={cn(
                     "nav-icon",
                     pathname === url && "nav-icon-active",
+                    "!filter-none !invert-0 !opacity-100 dark:invert dark:brightness-200"
                   )}
                 />
-                <p className="hidden lg:block">{name}</p>
+                <p className="hidden lg:block text-light-100">{name}</p>
               </li>
             </Link>
           ))}
@@ -82,6 +77,10 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
           <p className="subtitle-2 capitalize">{fullName}</p>
           <p className="caption">{email}</p>
         </div>
+      </div>
+
+      <div className="flex flex-col items-center gap-4 mt-8">
+        <ColorModeToggle />
       </div>
     </aside>
   );

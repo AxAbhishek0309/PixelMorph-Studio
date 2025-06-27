@@ -39,9 +39,11 @@ like these step-by-step in a beginner-friendly manner!
 
 <a href="https://youtu.be/lie0cr3wESQ?si=yLQyhMrYLjpysnqE" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
-## <a name="introduction">🤖 Introduction</a>
+## <a name="introduction">�� Introduction</a>
 
-A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.
+PixelMorph Studio
+
+A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management. Now with a modern purple-themed UI and beautiful glassy design.
 
 If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
 members. It's a place where people help each other out.
